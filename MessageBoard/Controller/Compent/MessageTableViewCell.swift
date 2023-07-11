@@ -11,6 +11,7 @@ class MessageTableViewCell: UITableViewCell {
     
     @IBOutlet weak var messagerLabel: UILabel?
     @IBOutlet weak var messageLabel: UILabel?
+    let timeStamp: Int? = nil
     
     static let identified = "MessageTableViewCell"
     

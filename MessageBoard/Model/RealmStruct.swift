@@ -12,10 +12,12 @@ class Message: Object {
     @Persisted(primaryKey: true) var _id: ObjectId
     @Persisted var messager: String = ""
     @Persisted var message: String = ""
+    @Persisted var timeStamp: Int
     
-    convenience init(messager: String, message: String) {
+    convenience init(messager: String, message: String, timeStamp: Int) {
         self.init()
         self.messager = messager
         self.message = message
+        self.timeStamp = timeStamp
     }
 }
